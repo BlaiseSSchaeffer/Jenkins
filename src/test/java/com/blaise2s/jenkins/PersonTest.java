@@ -14,7 +14,7 @@ public class PersonTest {
     }
 
     @Test
-    public void testLastName() throws InterruptedException {
+    public void testLastName() {
         Assert.assertTrue(lastName.equals(person.getLastName()));
     }
 
