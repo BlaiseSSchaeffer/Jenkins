@@ -1,6 +1,5 @@
 package com.blaise2s.jenkins;
 
-import org.hamcrest.core.IsInstanceOf;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,11 +10,6 @@ public class StudentTest {
     private final Integer grade = 12;
     private final Double accountBalance = 103.56;
     private Student student = new Student(firstName, lastName, id, grade, accountBalance);
-
-    @Test
-    public void testInstanceOf() {
-        Assert.assertThat(student, IsInstanceOf.instanceOf(Person.class));
-    }
 
     @Test
     public void testFirstName() {
